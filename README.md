@@ -1,7 +1,5 @@
 # 📊 Shopee Earphone Market Analysis  
-**Web Scraping · Data Cleaning · EDA · Correlation · Dashboard**
-
-Project ini menganalisis pasar **Earphone di Shopee Indonesia** menggunakan data hasil scraping real-time. Fokus utama adalah memahami harga, brand, penjualan, rating, serta karakteristik seller untuk menghasilkan insight yang dapat digunakan dalam pengambilan keputusan bisnis.
+End-to-end analytics project: web scraping with Puppeteer (Node.js) → data preprocessing (Python) → EDA & Dashboard (Power BI) → feature importance analysis (ML).
 
 ---
 
