@@ -15,7 +15,6 @@ Tujuan proyek ini adalah:
 ## Metthodology
 Adapun skema yang dijalankan:
 ![alt text](image.png)
-
 ---
 
 
