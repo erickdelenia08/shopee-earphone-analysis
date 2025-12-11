@@ -21,24 +21,27 @@ Project ini dirancang menyerupai workflow Data Analyst/Data Scientist di industr
 
 ## 📁 Project Structure
 ```bash
-├── app
-│   ├── css
-│   │   ├── **/*.css
-│   ├── favicon.ico
-│   ├── images
-│   ├── index.html
-│   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
-├── dist (or build)
-├── node_modules
-├── bower_components (if using bower)
-├── test
-├── Gruntfile.js/gulpfile.js
-├── README.md
-├── package.json
-├── bower.json (if using bower)
-└── .gitignore
+shopee-earphone-analysis
+├── data
+│   └── shopee_data.xlsx
+├── notebooks
+│   ├── feature_importance.ipynb
+│   └── shopee_EDA.ipynb
+├── power-bi
+│   └── dashboard.pbi
+├── python_env
+├── shopee-scrapper
+│   ├── collector
+│   ├── data
+│   ├── scrapper
+│   ├── utils
+│   ├── app.mjs
+│   ├── waitCaptcha.mjs
+│   ├── package.json
+│   └── package-lock.json
+├── .gitignore
+├── requirements.txt
+└── README.md
 ```
 
 ---
