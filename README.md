@@ -12,30 +12,9 @@ Tujuan proyek ini adalah:
 - Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat unutuk membeli atau menjual product terkait. Pertimbangan yang dimaksud dapat berupa harga, spesifikasi toko (shop), spesifikasi product dan lain sebagainya yang bahkan tidak tersedia di tampilan antarmuka Shopee, seperti: **Garansi (jenis garansi, tidak ada garansi), Tipe earphone (gaming/non-gaming) Cancellation rate toko serta Kategori advanced lainnya**.
 ---
 
-## ❓Business Questions (Problem Statement)
-Proyek ini dibangun untuk menjawab pertanyaan:
-
-🔹 **Untuk Buyer & Dropshipper**
-
-- Produk earphone apa yang paling banyak terjual?
-
-- Brand apa yang paling laris?
-
-- Range harga ideal untuk earphone dengan spesifikasi serupa?
-
-- Bagaimana kredibilitas toko (rating, komentar, cancellation rate)?
-
-- Variasi seperti gaming vs non-gaming mana yang lebih diminati?
-
-🔹 **Untuk Seller**
-
-- Faktor apa yang paling mempengaruhi penjualan?
-
-- Bagaimana hubungan rating, komentar, dan harga terhadap sold?
-
-- Jenis toko mana yang mendominasi (Shopee Mall, Star+, Regular)?
-
-- Segmen harga mana yang paling kompetitif?
+## Metthodology
+Adapun skema yang dijalankan:
+![alt text](image.png)
 
 ---
 
