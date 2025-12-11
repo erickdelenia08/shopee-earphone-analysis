@@ -88,22 +88,22 @@ shopee-earphone-analysis
 
 ### **1️⃣ products**
 Berisi detail produk earphone:
--`itemid`, `shopid`, `brand`, `price_min`, `price_max`, `price`,
--`price_before_discount`, `price_max_before_discount`,
--`price_min_before_discount`, `discount`, `historical_sold`, `sold`,
--`prod_rating`, `cmt_count`, `liked_count`, `stock`, `prod_ctime`,
--`image`, `total_rating_count`, `prod_rating1_count`,
--`prod_rating2_count`, `prod_rating3_count`, `prod_rating4_count`,
--`prod_rating5_count`, `product_age_days`, `Gaming`, `Jenis Garansi`,
--`Masa Garansi`, `Tipe Earphone, Headphone & Headset`, `Tipe Koneksi`
+- `itemid`, `shopid`, `brand`, `price_min`, `price_max`, `price`,
+- `price_before_discount`, `price_max_before_discount`,
+- `price_min_before_discount`, `discount`, `historical_sold`, `sold`,
+- `prod_rating`, `cmt_count`, `liked_count`, `stock`, `prod_ctime`,
+- `image`, `total_rating_count`, `prod_rating1_count`,
+- `prod_rating2_count`, `prod_rating3_count`, `prod_rating4_count`,
+- `prod_rating5_count`, `product_age_days`, `Gaming`, `Jenis Garansi`,
+- `Masa Garansi`, `Tipe Earphone, Headphone & Headset`, `Tipe Koneksi`
 
 ### **2️⃣ shops**
 Informasi rating dan performa toko:
--`shopid`, `follower_count`, `shop_rating`, `shop_rating_good`,
--`shop_rating_normal`, `shop_rating_bad`, `response_rate`,
--`response_time`, `is_verified`, `is_official_shop`, `is_preferred_plus`,
--`has_shopee_flash_sale`, `item_count`, `shop_ctime`, `preparation_time`,
--`cancellation_rate`, `province`
+- `shopid`, `follower_count`, `shop_rating`, `shop_rating_good`,
+- `shop_rating_normal`, `shop_rating_bad`, `response_rate`,
+- `response_time`, `is_verified`, `is_official_shop`, `is_preferred_plus`,
+- `has_shopee_flash_sale`, `item_count`, `shop_ctime`, `preparation_time`,
+- `cancellation_rate`, `province`
 
 ### **3️⃣ variants**
 Detail varian produk:
