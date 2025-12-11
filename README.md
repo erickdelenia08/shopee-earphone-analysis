@@ -6,15 +6,6 @@ Project ini menganalisis pasar **Earphone di Shopee Indonesia** menggunakan data
 ---
 
 ## 🚀 Project Overview
-- Scraping data produk, toko, dan varian menggunakan **Puppeteer (Node.js)**
-- Data processing, cleaning, dan exploratory analysis menggunakan **Python**
-- Analisis korelasi serta permutation feature importance 
-- Visualisasi data dan dashboard interaktif menggunakan **Power BI**
-- Struktur data mencakup:
-  - **products**: informasi produk  
-  - **shops**: informasi toko  
-  - **variants**: detail variasi produk 
-
 Pasar earphone di Shopee sangat kompetitif dengan ribuan produk yang memiliki harga, rating, spesifikasi, dan reputasi toko yang berbeda.
 Tujuan proyek ini adalah:
 Mengumpulkan data produk earphone secara otomatis
@@ -28,6 +19,7 @@ Cancellation rate toko
 Kategori advanced lainnya 
 Project ini dirancang menyerupai workflow Data Analyst/Data Scientist di industri.
 ---
+
 ## ❓Business Questions (Problem Statement)
 Proyek ini dibangun untuk menjawab pertanyaan:
 
