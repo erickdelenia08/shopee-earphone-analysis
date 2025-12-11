@@ -1,5 +1,5 @@
 # 📊 Shopee Earphone Market Analysis  
-**End-to-End Data Project — Web Scraping · Data Cleaning · EDA · Correlation · Dashboard**
+**Web Scraping · Data Cleaning · EDA · Correlation · Dashboard**
 
 Project ini menganalisis pasar **Earphone di Shopee Indonesia** menggunakan data hasil scraping real-time. Fokus utama adalah memahami harga, brand, penjualan, rating, serta karakteristik seller untuk menghasilkan insight yang dapat digunakan dalam pengambilan keputusan bisnis.
 
@@ -20,7 +20,26 @@ Project ini dirancang menyerupai workflow Data Analyst/Data Scientist di industr
 ---
 
 ## 📁 Project Structure
-
+```bash
+├── app
+│   ├── css
+│   │   ├── **/*.css
+│   ├── favicon.ico
+│   ├── images
+│   ├── index.html
+│   ├── js
+│   │   ├── **/*.js
+│   └── partials/template
+├── dist (or build)
+├── node_modules
+├── bower_components (if using bower)
+├── test
+├── Gruntfile.js/gulpfile.js
+├── README.md
+├── package.json
+├── bower.json (if using bower)
+└── .gitignore
+```
 
 ---
 
@@ -53,7 +72,6 @@ Detail varian produk:
 Hal yang dilakukan:
 - Menghapus duplikasi
 - Menstandarisasi kategori & tipe data
-- Menangani outlier dengan **log-transform** dan **clipping**
 - Menangani missing values
 - Memisahkan data produk–toko–varian
 
