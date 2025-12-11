@@ -8,16 +8,16 @@ Project ini menganalisis pasar **Earphone di Shopee Indonesia** menggunakan data
 ## 🚀 Project Overview
 Pasar earphone di Shopee sangat kompetitif dengan ribuan produk yang memiliki harga, rating, spesifikasi, dan reputasi toko yang berbeda.
 Tujuan proyek ini adalah:
-Mengumpulkan data produk earphone secara otomatis
-Mendesain dashboard untuk eksplorasi dan insight
-Menganalisis faktor yang paling berpengaruh terhadap penjualan
-Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat
+- Mengumpulkan data produk earphone secara otomatis
+- Mendesain dashboard untuk eksplorasi dan insight
+- Menganalisis faktor yang paling berpengaruh terhadap penjualan
+- Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat
 Dashboard ini menyediakan filter yang tidak tersedia di Shopee, seperti:
-Garansi (jenis garansi, tidak ada garansi)
-Tipe earphone (gaming/non-gaming)
-Cancellation rate toko
-Kategori advanced lainnya 
-Project ini dirancang menyerupai workflow Data Analyst/Data Scientist di industri.
+ -Garansi (jenis garansi, tidak ada garansi)
+- Tipe earphone (gaming/non-gaming)
+- Cancellation rate toko
+- Kategori advanced lainnya 
+.
 ---
 
 ## ❓Business Questions (Problem Statement)
