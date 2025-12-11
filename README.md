@@ -9,14 +9,7 @@ Tujuan proyek ini adalah:
 - Mengumpulkan data produk earphone secara otomatis
 - Mendesain dashboard untuk eksplorasi dan insight
 - Menganalisis faktor yang paling berpengaruh terhadap penjualan
-- Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat
-
-**Dashboard ini menyediakan filter yang tidak tersedia di Shopee, seperti:**
-- Garansi (jenis garansi, tidak ada garansi)
-- Tipe earphone (gaming/non-gaming)
-- Cancellation rate toko
-- Kategori advanced lainnya 
-.
+- Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat unutuk membeli atau menjual product terkait. Pertimbangan yang dimaksud dapat berupa harga, spesifikasi toko (shop), spesifikasi product dan lain sebagainya yang bahkan tidak tersedia di tampilan antarmuka Shopee, seperti: **Garansi (jenis garansi, tidak ada garansi), Tipe earphone (gaming/non-gaming) Cancellation rate toko serta Kategori advanced lainnya**.
 ---
 
 ## ❓Business Questions (Problem Statement)
