@@ -16,6 +16,131 @@ Tujuan proyek ini adalah:
 Adapun skema yang dijalankan:
 
 ![alt text](scheme.png)
+
+### 🧩 Data Collection (Scraping)
+
+Tools: Puppeteer (Node.js)
+Output: products.json, variants.json, shops.json
+
+Pada tahap ini, data earphone dikumpulkan langsung dari Shopee menggunakan Puppeteer untuk mengekstrak:
+
+Informasi produk (nama, brand, harga, historical_sold, sold)
+
+Variasi produk
+
+Detail toko (rating, lokasi, cancellation rate*, dll)
+
+Atribut tambahan seperti garansi, kategori, dan spesifikasi lain
+
+Data yang terkumpul masih berbentuk raw JSON, berisi nested structure dan beberapa field tidak konsisten.
+
+Catatan: Cancellation rate, jenis garansi, dan atribut lain tidak tersedia langsung di filter Shopee → ini memberikan nilai tambah untuk analisis.
+
+### 🧹 Data Cleaning & Transformation
+
+Tools: Python (pandas, numpy), Google Colab
+Output: shopee_data.xlsx (3 sheet: products, variants, shops)
+
+Langkah-langkah pembersihan:
+
+1. Menghapus nilai kosong & duplikasi
+
+Membersihkan harga kosong
+
+Menghapus produk yang tidak lengkap informasinya
+
+2. Normalisasi kolom numerik
+
+Konversi harga
+
+Konversi rating_count
+
+Parsing historical_sold (string → integer)
+
+3. Standardisasi kategori
+
+Mapping jenis garansi
+
+Klasifikasi shop_type (Shopee Mall, Star+, Normal)
+
+4. Merge tabel
+
+Tiga file JSON digabung menjadi satu dataset komprehensif (products + variants + shops).
+
+5. Export ke Excel
+
+Dataset final diformat menjadi file Excel dengan sheet terpisah agar mudah di-load ke Power BI.
+
+### 📊 Exploratory Data Analysis (Power BI Dashboard)
+
+Dashboard Power BI dibangun berdasarkan dataset bersih (Excel output tahap 2).
+Tujuan EDA di Power BI:
+
+1. Menjawab pertanyaan bisnis seperti:
+
+Produk apa yang paling banyak terjual?
+
+Brand apa yang paling laris?
+
+Rentang harga earphone saat ini (min–max)?
+
+Toko mana yang paling sering mendapatkan penjualan?
+
+Distribusi lokasi toko earphone?
+
+2. Analisis lebih spesifik yang tidak tersedia di filter Shopee:
+
+Penyaringan earphone gaming, TWS, wired, dll
+
+Filter berdasarkan jenis garansi
+
+Cancelation rate toko
+
+Rating score dan review quality
+
+Kredibilitas toko untuk kebutuhan buyer atau dropshipper
+
+3. Fitur interaktif (slice-by):
+
+brand
+
+price range
+
+shop_type
+
+stock
+
+rating
+
+garansi
+
+Dashboard memudahkan user untuk menelusuri produk berdasarkan kategori tertentu dan menemukan peluang produk untuk dijual kembali (dropshipping) maupun analisis untuk pembeli.
+
+### Tahap 4 — Feature Importance (Machine Learning)
+
+Tools: Python (scikit-learn, statsmodels)
+
+Setelah mendapatkan insight eksploratif dari dashboard, dataset dimanfaatkan untuk mencari faktor apa yang paling mempengaruhi penjualan menggunakan:
+
+Spearman correlation
+
+Permutation Feature Importance
+
+VIF (Variance Inflation Factor) untuk pengecekan multikolinieritas
+
+Model yang digunakan
+
+RandomForestRegressor sebagai model baseline non-linear
+
+Hasil yang dianalisis:
+
+historical_sold → pengaruh terbesar
+
+cmt_count → indikator engagement dan trust
+
+total_rating
+
+
 ---
 
 
