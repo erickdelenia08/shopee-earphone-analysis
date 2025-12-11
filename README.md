@@ -8,16 +8,65 @@ Project ini menganalisis pasar **Earphone di Shopee Indonesia** menggunakan data
 ## 🚀 Project Overview
 - Scraping data produk, toko, dan varian menggunakan **Puppeteer (Node.js)**
 - Data processing, cleaning, dan exploratory analysis menggunakan **Python**
-- Analisis korelasi menggunakan **Spearman**, **Cramér’s V**, dan **Kruskal–Wallis**
+- Analisis korelasi serta permutation feature importance 
 - Visualisasi data dan dashboard interaktif menggunakan **Power BI**
 - Struktur data mencakup:
   - **products**: informasi produk  
   - **shops**: informasi toko  
-  - **variants**: detail variasi produk  
+  - **variants**: detail variasi produk 
+
+Pasar earphone di Shopee sangat kompetitif dengan ribuan produk yang memiliki harga, rating, spesifikasi, dan reputasi toko yang berbeda.
+Tujuan proyek ini adalah:
+
+Mengumpulkan data produk earphone secara otomatis
+
+Mendesain dashboard untuk eksplorasi dan insight
+
+Menganalisis faktor yang paling berpengaruh terhadap penjualan
+
+Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat
+
+Dashboard ini menyediakan filter yang tidak tersedia di Shopee, seperti:
+
+Garansi (jenis garansi, tidak ada garansi)
+
+Tipe earphone (gaming/non-gaming)
+
+Cancellation rate toko
+
+Kategori advanced lainnya 
 
 Project ini dirancang menyerupai workflow Data Analyst/Data Scientist di industri.
 
 ---
+## ❓Business Questions (Problem Statement)
+Proyek ini dibangun untuk menjawab pertanyaan:
+
+🔹 **Untuk Buyer & Dropshipper**
+
+- Produk earphone apa yang paling banyak terjual?
+
+- Brand apa yang paling laris?
+
+- Range harga ideal untuk earphone dengan spesifikasi serupa?
+
+- Bagaimana kredibilitas toko (rating, komentar, cancellation rate)?
+
+- Variasi seperti gaming vs non-gaming mana yang lebih diminati?
+
+🔹 **Untuk Seller**
+
+- Faktor apa yang paling mempengaruhi penjualan?
+
+- Bagaimana hubungan rating, komentar, dan harga terhadap sold?
+
+- Jenis toko mana yang mendominasi (Shopee Mall, Star+, Regular)?
+
+- Segmen harga mana yang paling kompetitif?
+
+---
+
+
 
 ## 📁 Project Structure
 ```bash
