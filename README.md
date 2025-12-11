@@ -12,7 +12,7 @@ Tujuan proyek ini adalah:
 - Mendesain dashboard untuk eksplorasi dan insight
 - Menganalisis faktor yang paling berpengaruh terhadap penjualan
 - Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat
-Dashboard ini menyediakan filter yang tidak tersedia di Shopee, seperti:
+**Dashboard ini menyediakan filter yang tidak tersedia di Shopee, seperti:**
 - Garansi (jenis garansi, tidak ada garansi)
 - Tipe earphone (gaming/non-gaming)
 - Cancellation rate toko
