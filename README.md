@@ -24,7 +24,7 @@ Output: [products_v2.json](shopee-scrapper/data/products_v2.json)
 
 Pada tahap ini, data earphone dikumpulkan langsung dari Shopee menggunakan Puppeteer untuk mengekstrak informasi detail baik dari product maupun shop yang terkait. 
 
-[Lihat Dataset Summary](#dataset-summary)
+[Lihat Dataset Summary](#-dataset-summary)
 
 
 
