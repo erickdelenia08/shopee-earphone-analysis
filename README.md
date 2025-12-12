@@ -22,9 +22,8 @@ Adapun skema yang dijalankan:
 Tools: Puppeteer (Node.js)
 Output: [products_v2.json](shopee-scrapper/data/products_v2.json)
 
-Pada tahap ini, data earphone dikumpulkan langsung dari Shopee menggunakan Puppeteer untuk mengekstrak:
+Pada tahap ini, data earphone dikumpulkan langsung dari Shopee menggunakan Puppeteer untuk mengekstrak informasi detail baik dari product maupun shop yang terkait. [Dataset Summary](#dataset-summary)
 
-Informasi detail baik dari product maupun shop yang terkait.
 
 ### 🧹 Data Cleaning & Transformation
 
