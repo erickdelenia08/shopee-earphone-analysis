@@ -20,7 +20,7 @@ Adapun skema yang dijalankan:
 ### 🧩 Data Collection (Scraping)
 
 Tools: Puppeteer (Node.js)
-Output: [products_v2.json](shopee-scrapper\data\products_v2.json)
+Output: [products_v2.json](shopee-scrapper/data/products_v2.json)
 
 Pada tahap ini, data earphone dikumpulkan langsung dari Shopee menggunakan Puppeteer untuk mengekstrak:
 
@@ -29,7 +29,7 @@ Informasi detail baik dari product maupun shop yang terkait.
 ### 🧹 Data Cleaning & Transformation
 
 Tools: Python (pandas, numpy), Notebook
-Output: [shopee_data.xlsx](data\shopee_data.xlsx) 3 sheet: products, variants, shops
+Output: [shopee_data.xlsx](data/shopee_data.xlsx) 3 sheet: products, variants, shops
 Dataset final diformat menjadi file Excel dengan sheet terpisah agar mudah di-load ke Power BI.
 
 ### 📊 Exploratory Data Analysis (Power BI Dashboard)
