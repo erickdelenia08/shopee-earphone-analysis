@@ -15,7 +15,7 @@ Tujuan proyek ini adalah:
 ## Metthodology
 Adapun skema yang dijalankan:
 
-![alt text](scheme.png)
+![alt text](images/scheme.png)
 
 ### 🧩 Data Collection (Scraping)
 
@@ -120,7 +120,7 @@ Hal yang dilakukan:
 
 Fokus utama:
 ### **📌 Market Landscape**
-- Distribusi harga earphone di Shopee  
+<!-- - Distribusi harga earphone di Shopee  
 - Kategori brand populer  
 - Analisis stok dan penjualan  
 
@@ -132,13 +132,13 @@ Fokus utama:
 ### **📌 Price & Sales Analysis**
 - Hubungan harga dengan penjualan  
 - Outlier detection  
-- Distribusi rating dan ulasan  
+- Distribusi rating dan ulasan   -->
 
 ---
 
 ## 🔗 Correlation Analysis
 
-### **Metode yang digunakan:**
+<!-- ### **Metode yang digunakan:**
 - **Spearman correlation** → Numerik vs numerik (karena banyak outlier)  
 - **Cramér’s V** → Kategori vs kategori  
 - **Kruskal–Wallis Test** → Numerik vs kategori  
@@ -148,29 +148,42 @@ Fokus utama:
 - Apakah harga mempengaruhi penjualan?  
 - Apakah rating berhubungan dengan sold?  
 - Apakah seller “Preferred” menjual lebih banyak?  
-- Brand mana yang memiliki performa paling stabil?  
+- Brand mana yang memiliki performa paling stabil?   -->
 
 ---
 
+
+
 ## 📊 Dashboard (Power BI)
 
-Dashboard mencakup:
+<!-- Dashboard mencakup:
 - Distribusi harga  
 - Brand performance  
 - Rating & Penjualan  
 - Seller overview  
 - Lokasi toko  
-- Insight per kategori brand / seller / harga
+- Insight per kategori brand / seller / harga -->
+![alt text](images/pg-1.png)
+![alt text](images/pg-2.png)
+![alt text](images/pg-3.png)
+
+
 
 📁 File dashboard:  
-`dashboard/shopee_dashboard.pbix`
+[`file power bi`](power-bi/shopee.pbix)
+
+Dashboard online dapat di akses pada [link ini](https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D)
 
 ---
 
-## ⭐ Key Insights (Sample)
-> *Insight ini dapat disesuaikan setelah analisis selesai.*
+## 🔍 Permutation Feature Importance
+![alt text](images/permutation.png)
 
-- Sebagian besar earphone dijual pada rentang **Rp20.000 – Rp150.000**  
+---
+## ⭐ Conclusion
+<!-- > *Insight ini dapat disesuaikan setelah analisis selesai.* -->
+
+- earphone yang ada dishopee dijual pada rentang harga **Rp1.950 – Rp5.000.000**  
 - Toko *Preferred* memiliki median penjualan **lebih tinggi**  
 - Rating berpengaruh positif terhadap sold, namun hubungan tidak linear  
 - Banyak brand low-budget mendominasi jumlah produk namun tidak penjualan  
@@ -178,37 +191,11 @@ Dashboard mencakup:
 
 ---
 
-## ▶️ How to Run
-
-### **Install dependency**
-
-
-npm install
-pip install -r requirements.txt
-
-
-### **Run scraper**
-
-
-node scripts/scrape.js
-
-
-### **Run analysis**
-
-
-jupyter notebook
-
-Buka file:
-
-
-notebooks/03_eda.ipynb
-
-
----
 
 ## 📬 Contact  
 **Author:** Erick Delenia  
-- Instagram: @yourusername  
-- Email: your@email.com  
+- Instagram: [@ercdel](https://instagram.com/ercdel)
+ 
+- Email: erickdelenia08@email.com  
 
 Project ini dibuat sebagai portofolio profesional untuk posisi **Data Analyst / Data Scientist**.
