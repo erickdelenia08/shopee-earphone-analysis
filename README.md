@@ -205,6 +205,18 @@ Setelah mendapatkan insight eksploratif dari dashboard, dataset dimanfaatkan unt
 
 ![alt text](images/permutation.png)
 
+Dari grafik tersebut, diperoleh insight sebagai berikut:
+
+1. **Fitur paling berpengaruh**  
+   - `cmt_count` (jumlah komentar) memiliki pengaruh terbesar terhadap penjualan, menunjukkan bahwa interaksi pengguna dalam bentuk komentar sangat menentukan popularitas produk.  
+   - `prod_rating1_count` (jumlah rating 1) dan `follower_count` juga memiliki pengaruh yang signifikan, menekankan pentingnya menjaga reputasi produk dan jumlah pengikut toko.
+
+2. **Fitur dengan pengaruh menengah**  
+   - `shop_ctime` (lama toko), `prod_rating` (rata-rata rating), `price`, dan `preparation_time` memiliki kontribusi sedang terhadap penjualan. Hal ini menunjukkan bahwa reputasi toko, kualitas produk, harga, dan waktu persiapan memengaruhi keputusan pembeli, meskipun tidak sebesar komentar dan rating negatif.
+
+3. **Fitur dengan pengaruh rendah atau hampir tidak berpengaruh**  
+   - Fitur seperti `response_rate`, `stock`, `Masa Garansi`, `shop_type`, dan jenis garansi lainnya memiliki pengaruh sangat kecil terhadap penjualan. Dengan kata lain, atribut-atribut ini kurang menentukan performa penjualan dibanding interaksi pengguna.
+
 ---
 ## ⭐ Conclusion
 <!-- > *Insight ini dapat disesuaikan setelah analisis selesai.* -->
