@@ -121,10 +121,12 @@ Detail varian produk:
 
 ## 🧹 Data Cleaning
 Hal yang dilakukan:
-- Menghapus duplikasi
-- Menstandarisasi kategori & tipe data
-- Menangani missing values
-- Memisahkan data produk–toko–varian
+- Mengekstrak data mentah (JSON) menjadi 4 tabel: `product`, `shop`, `variant`, dan `attribute`.  
+- Mengidentifikasi nilai `null`/`NaN` untuk dihapus atau diisi sesuai kebutuhan per tabel.  
+- Memanipulasi beberapa isi kolom agar sesuai standar.  
+- Menyesuaikan tipe data setiap kolom.  
+- Setelah keempat tabel bersih, dilakukan **left join** antara `product` dengan `attribute`, kemudian mengisi nilai `NaN` atau `null`.  
+- Export ke **Excel (.xlsx)** dengan 3 sheet: `product`, `shops`, dan `variant`. 
 
 ---
 
