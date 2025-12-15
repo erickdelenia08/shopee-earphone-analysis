@@ -4,12 +4,24 @@ End-to-end analytics project: web scraping with Puppeteer (Node.js) → data pre
 ---
 
 ## 🚀 Project Overview
-Pasar earphone di Shopee sangat kompetitif dengan ribuan produk yang memiliki harga, rating, spesifikasi, dan reputasi toko yang berbeda.
-Tujuan proyek ini adalah:
-- Mengumpulkan data produk earphone secara otomatis
-- Mendesain dashboard untuk eksplorasi dan insight
-- Menganalisis faktor yang paling berpengaruh terhadap penjualan
-- Membantu buyer, dropshipper, dan seller untuk mengambil keputusan lebih tepat unutuk membeli atau menjual product terkait. Pertimbangan yang dimaksud dapat berupa harga, spesifikasi toko (shop), spesifikasi product dan lain sebagainya yang bahkan tidak tersedia di tampilan antarmuka Shopee, seperti: **Garansi (jenis garansi, tidak ada garansi), Tipe earphone (gaming/non-gaming) Cancellation rate toko serta Kategori advanced lainnya**.
+Pasar earphone di Shopee sangat kompetitif dengan ribuan produk yang memiliki harga, rating, spesifikasi, dan reputasi toko yang berbeda. Proyek ini menganalisis pasar earphone di Shopee Indonesia untuk memberikan insight terkait produk dan penjualan. Fokus utama proyek adalah:  
+1. Memberikan gambaran umum market earphone, termasuk brand dan produk paling laku serta sebaran toko.  
+2. Mempermudah pencarian produk dengan filtrasi yang lebih lengkap dan detail dibanding antarmuka Shopee. Filtrasi yang dimaksud dapat berupa harga, spesifikasi toko (shop), spesifikasi product dan lain sebagainya yang bahkan tidak tersedia di tampilan antarmuka Shopee, seperti: **Garansi (jenis garansi, tidak ada garansi), Tipe earphone (gaming/non-gaming) Cancellation rate toko serta Kategori advanced lainnya**.
+3. Menganalisis fitur atau kriteria yang paling berpengaruh terhadap penjualan earphone.  
+
+Proses proyek mencakup pengumpulan data dari API Shopee, pembersihan data, visualisasi dashboard, dan analisis feature importance menggunakan metode non-parametrik dan Random Forest.
+
+---
+
+## 🎯 Problem Statement
+- Produk apa yang paling banyak terjual?  
+- Brand apa yang paling laris?  
+- Variasi harga earphone (minimum & maksimum)?  
+- Toko mana yang paling laku?  
+- Sebaran toko earphone?  
+- Faktor apa saja yang mempengaruhi penjualan earphone?  
+- Bagaimana filter tambahan di Power BI bisa mempermudah buyer/dropshipper memilih produk terbaik?
+
 ---
 
 ## Metthodology
@@ -177,6 +189,18 @@ Dashboard online dapat di akses pada [link ini](https://app.powerbi.com/view?r=e
 ---
 
 ## 🔍 Permutation Feature Importance
+Tools: Python (scikit-learn, statsmodels)
+Setelah mendapatkan insight eksploratif dari dashboard, dataset dimanfaatkan untuk mencari faktor apa yang paling mempengaruhi penjualan menggunakan.Namun sebelum melakukan feature importance, dilakukan **Exploratory Data Analysis (EDA)**:  
+1. Visualisasi distribusi tiap fitur menggunakan **barplot** dan **boxplot**.  
+2. Data tidak normal, banyak outlier; karena validitas data dari Shopee API sudah benar, outlier tidak dihapus atau dinormalisasi.  
+3. Karena data tidak normal, digunakan **statistik non-parametrik**.  
+4. Korelasi **Spearman** untuk melihat hubungan antar fitur.  
+5. Filtering fitur dengan membuang fitur redundan dan menggunakan clustering untuk memperoleh fitur bebas **multikolinieritas**.  
+6. **Splitting** data dan **encoding** fitur kategorikal.  
+7. Modelling menggunakan **Random Forest**.  
+8. Menghitung **Permutation Feature Importance** untuk menilai pengaruh tiap fitur terhadap penjualan (`sold`).  
+9. Uji signifikan 1 fitur terhadap penjualan menggunakan uji non-parametrik.  
+
 ![alt text](images/permutation.png)
 
 ---
