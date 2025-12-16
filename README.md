@@ -302,7 +302,9 @@ Analisis dilakukan menggunakan pendekatan statistik non-parametrik dan machine l
 
 ### 1. Distribusi Data dan Karakteristik Awal
 
-Berdasarkan visualisasi distribusi fitur numerik (contoh: `price`, `sold`, `cmt_count`, dan fitur rating), data menunjukkan karakteristik sebagai berikut:
+![alt text](images/distribution.png)
+
+Berdasarkan visualisasi distribusi fitur numerik (contoh: `price`, `discount`, `sold`,`prod_rating`,`cmt_count` dan `like_count`), data menunjukkan karakteristik sebagai berikut:
 
 - Distribusi **tidak normal** dan **right-skewed**, terutama pada fitur harga dan penjualan.
 - Terdapat banyak **outlier**, namun outlier tersebut merepresentasikan kondisi pasar sebenarnya (produk premium, toko besar, atau produk sangat laris).
@@ -319,6 +321,10 @@ Untuk melihat hubungan antar fitur dan target penjualan (`sold`), digunakan **ko
 - Tidak mengasumsikan distribusi normal.
 - Lebih robust terhadap outlier.
 - Cocok untuk data berbasis ranking dan skala ordinal.
+
+![alt text](images/corr-1.png)
+
+![alt text](images/corr-2.png)
 
 Hasil heatmap menunjukkan bahwa:
 
@@ -338,6 +344,8 @@ Pendekatan ini memungkinkan:
 - Pemilihan **satu fitur representatif** dari setiap cluster.
 - Model menjadi lebih stabil dan interpretatif.
 
+![alt text](images/cluster.png)
+
 Hasil clustering menunjukkan pemisahan yang jelas antara:
 
 - Fitur popularitas produk
@@ -356,6 +364,7 @@ Setelah seleksi fitur:
 
 Untuk mengukur pengaruh masing-masing fitur terhadap penjualan, digunakan **Permutation Feature Importance**, yang menilai penurunan performa model ketika nilai suatu fitur diacak.
 ![alt text](images/permutation.png)
+
 Hasil menunjukkan bahwa faktor paling berpengaruh terhadap penjualan earphone adalah:
 
 1. **Jumlah komentar (`cmt_count`)**
