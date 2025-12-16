@@ -328,9 +328,9 @@ Untuk melihat hubungan antar fitur dan target penjualan (`sold`), digunakan **ko
 
 Hasil heatmap menunjukkan bahwa:
 
-- Fitur-fitur berbasis **interaksi pengguna** seperti `cmt_count`, `total_rating_count`, dan `historical_sold` memiliki korelasi kuat dengan `sold`.
-- Fitur rating (rating 1–5 dan total rating) memiliki korelasi tinggi satu sama lain, mengindikasikan potensi **multikolinieritas**.
-- Fitur harga memiliki korelasi negatif lemah hingga sedang terhadap penjualan.
+- Fitur-fitur berbasis **interaksi pengguna** (`cmt_count`, `rating_count`) memiliki korelasi kuat terhadap penjualan `sold`.
+- Beberapa fitur sperti `prod_rating` (rating 1–5 dan total rating), `shop_rating` memiliki korelasi tinggi satu sama lain, mengindikasikan potensi **multikolinieritas**.
+- Fitur harga memiliki korelasi negatif korelasi negatif moderat artinya semakin mahal harga, kecenderungan penjualan menurun (hubungan monotonik negatif).
 
 ---
 
