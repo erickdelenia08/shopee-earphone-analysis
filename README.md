@@ -314,7 +314,12 @@ Hasil clustering menunjukkan pemisahan yang jelas antara:
 - Fitur reputasi toko
 - Fitur harga dan operasional toko
 
-Adapun fitur-fitur terpilih dari tiap cluster yaitu `prod_rating1_count`, `cmt_count`, `liked_count`, `follower_count`,`shop_rating_bad`, `item_count`, `shop_ctime`, `response_rate` `discount`, `Masa Garansi`,`preparation_time`, `prod_rating`, `price`,`stock`
+Adapun fitur-fitur terpilih dari tiap cluster yaitu `prod_rating1_count`, `cmt_count`, `liked_count`, 
+
+`follower_count`,`shop_rating_bad`, `item_count`, `shop_ctime`, `response_rate`,
+
+`discount`, `Masa Garansi`,`preparation_time`, `prod_rating`, `price`,`stock`
+
 ---
 
 ### 4. Modelling dan Permutation Feature Importance
