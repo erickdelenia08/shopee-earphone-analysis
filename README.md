@@ -33,8 +33,10 @@ Proses proyek mencakup pengumpulan data dari API Shopee, pembersihan data, visua
 Adapun skema yang dijalankan:
 
 ![alt text](images/scheme.png)
+---
 
-### 🧩 Data Collection (Scraping)
+
+## 🧩 Data Collection (Scraping)
 
 Tools: Puppeteer (Node.js)
 Output: [products_v2.json](shopee-scrapper/data/products_v2.json)
@@ -43,30 +45,7 @@ Pada tahap ini, data earphone dikumpulkan langsung dari Shopee menggunakan Puppe
 
 [Lihat Dataset Summary](#-dataset-summary)
 
-### 🧹 Data Cleaning & Transformation
-
-Tools: Python (pandas, numpy), Notebook
-Output: [shopee_data.xlsx](data/shopee_data.xlsx) 3 sheet: products, variants, shops
-Dataset final diformat menjadi file Excel dengan sheet terpisah agar mudah di-load ke Power BI.
-
-### 📊 Exploratory Data Analysis (Power BI Dashboard)
-
-Dashboard Power BI dibangun berdasarkan dataset bersih (Excel output tahap Data Cleaning).
-Tujuan EDA di Power BI untuk menjawab problem define. Selain itu Dashboard memudahkan user untuk menelusuri produk berdasarkan kategori tertentu dan menemukan peluang produk untuk dijual kembali (dropshipping) maupun analisis untuk pembeli.
-
-### Feature Importance (Machine Learning)
-
-Tools: Python (scikit-learn, statsmodels)
-
-Setelah mendapatkan insight eksploratif dari dashboard, dataset dimanfaatkan untuk mencari faktor apa yang paling mempengaruhi penjualan menggunakan
-
-### Conclusion
-
-Setelah semua tahap sebelumnya selesai , selanjutnya informasi yang ada di simpulkan untuk menjawab probelm define
-
----
-
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```bash
 shopee-earphone-analysis
@@ -93,8 +72,7 @@ shopee-earphone-analysis
 ```
 
 ---
-
-## 📦 Dataset Summary
+### 📦 Dataset Summary
 
 ### **1️⃣ products**
 
@@ -129,6 +107,9 @@ Detail varian produk:
 
 ## 🧹 Data Cleaning
 
+Tools: Python (pandas, numpy), Notebook
+Output: [shopee_data.xlsx](data/shopee_data.xlsx) 3 sheet: products, variants, shops
+Dataset final diformat menjadi file Excel dengan sheet terpisah agar mudah di-load ke Power BI.
 Hal yang dilakukan:
 
 - Mengekstrak data mentah (JSON) menjadi 4 tabel: `product`, `shop`, `variant`, dan `attribute`.
@@ -185,7 +166,7 @@ Halaman ini berfokus pada karakteristik dan performa toko.
 - Jumlah produk per toko
 - Rata-rata rating toko
 - Toko dengan jumlah produk terbanyak
-- Tipe toko (Official, Preferred, dll.)
+- Tipe toko (Shope Mall, Star +, dll.)
 - Tabel detail toko
 - Slicer harga dan pencarian spesifik toko
 
