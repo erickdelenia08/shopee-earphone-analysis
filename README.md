@@ -24,7 +24,7 @@ Proses proyek mencakup pengumpulan data dari API Shopee, pembersihan data, visua
 - Toko mana yang paling laku?
 - Sebaran toko earphone?
 - Faktor apa saja yang mempengaruhi penjualan earphone?
-- Bagaimana filter tambahan di Power BI bisa mempermudah buyer/dropshipper memilih produk terbaik?
+<!-- - Bagaimana filter tambahan di Power BI bisa mempermudah buyer/dropshipper memilih produk terbaik? -->
 
 ---
 
