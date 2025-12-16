@@ -140,44 +140,6 @@ Hal yang dilakukan:
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
-
-Fokus utama:
-
-### **📌 Market Landscape**
-
-<!-- - Distribusi harga earphone di Shopee
-- Kategori brand populer
-- Analisis stok dan penjualan
-
-### **📌 Seller Characteristics**
-- Performa seller berdasarkan lokasi
-- Followers vs rating vs penjualan
-- Perbedaan antara *official shop* vs non-official
-
-### **📌 Price & Sales Analysis**
-- Hubungan harga dengan penjualan
-- Outlier detection
-- Distribusi rating dan ulasan   -->
-
----
-
-## 🔗 Correlation Analysis
-
-<!-- ### **Metode yang digunakan:**
-- **Spearman correlation** → Numerik vs numerik (karena banyak outlier)
-- **Cramér’s V** → Kategori vs kategori
-- **Kruskal–Wallis Test** → Numerik vs kategori
-- Scatter plot menggunakan **log-transform**
-
-### **Pertanyaan utama:**
-- Apakah harga mempengaruhi penjualan?
-- Apakah rating berhubungan dengan sold?
-- Apakah seller “Preferred” menjual lebih banyak?
-- Brand mana yang memiliki performa paling stabil?   -->
-
----
-
 ## 📊 Dashboard (Power BI)
 
 Dashboard dibangun dalam **tiga halaman utama**, masing-masing dengan fokus analisis yang berbeda untuk menjawab problem statement secara bertahap, mulai dari gambaran market, analisis toko, hingga eksplorasi produk.
