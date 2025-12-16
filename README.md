@@ -336,11 +336,11 @@ Untuk mengukur pengaruh masing-masing fitur terhadap penjualan, digunakan **Perm
 Hasil menunjukkan bahwa faktor paling berpengaruh terhadap penjualan earphone adalah:
 
 1. **Jumlah komentar (`cmt_count`)**
-2. **Jumlah rating produk**
-3. **Jumlah follower toko**
+2. **Jumlah rating 1 produk (`prod_rating1_count`)**
+3. **Jumlah follower toko (`follower_count`)**
 4. **Usia toko (`shop_ctime`)**
-5. **Rating produk**
-6. **Harga dan waktu persiapan**
+5. **Rating produk (`prod_rating`)**
+6. **Harga dan waktu persiapan (`price`)**
 
 Sementara itu, fitur seperti jenis garansi dan tipe toko memiliki pengaruh yang relatif kecil terhadap penjualan.
 
