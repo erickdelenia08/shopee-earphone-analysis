@@ -170,23 +170,107 @@ Fokus utama:
 
 ## 📊 Dashboard (Power BI)
 
-<!-- Dashboard mencakup:
-- Distribusi harga  
-- Brand performance  
-- Rating & Penjualan  
-- Seller overview  
-- Lokasi toko  
-- Insight per kategori brand / seller / harga -->
+Dashboard dibangun dalam **tiga halaman utama**, masing-masing dengan fokus analisis yang berbeda untuk menjawab problem statement secara bertahap, mulai dari gambaran market, analisis toko, hingga eksplorasi produk.
+
+---
+### 📄 Page 1 – Market Overview
 ![alt text](images/pg-1.png)
+Halaman ini menyajikan gambaran umum pasar earphone di Shopee Indonesia.
+
+#### Insight yang Ditampilkan
+- Sebaran harga earphone (distribution plot)
+- Harga minimum dan maksimum
+- Jumlah produk unik
+- Total stok dan total penjualan (sold)
+- Jumlah toko (shops/stores)
+- Top brand berdasarkan penjualan
+- Brand dengan jumlah produk terbanyak
+- Distribusi atribut produk (pie/donut chart):
+  - Tipe koneksi
+  - Jenis garansi
+  - Tipe earphone
+  - Gaming vs non-gaming
+
+**Tujuan:**  
+Menjawab pertanyaan terkait kondisi pasar secara keseluruhan dan mengidentifikasi pola umum dalam market earphone di Shopee.
+
+---
+
+### 🏪 Page 2 – Shop Analysis
 ![alt text](images/pg-2.png)
+Halaman ini berfokus pada karakteristik dan performa toko.
+
+#### Insight yang Ditampilkan
+- Sebaran lokasi toko berdasarkan provinsi
+- Toko dengan penjualan tertinggi
+- Jumlah toko aktif
+- Brand terlaris per toko
+- Jumlah produk per toko
+- Rata-rata rating toko
+- Toko dengan jumlah produk terbanyak
+- Tipe toko (Official, Preferred, dll.)
+- Tabel detail toko
+- Slicer harga dan pencarian spesifik toko
+
+**Tujuan:**  
+Membantu analisis **kredibilitas toko**, baik bagi buyer maupun dropshipper dalam memilih toko dengan performa dan reputasi terbaik.
+
+---
+
+### 📦 Page 3 – Product Analysis
 ![alt text](images/pg-3.png)
+Halaman ini berfokus pada eksplorasi dan seleksi produk secara detail.
 
+#### Fitur Utama
+- Slicer harga
+- Slicer spesifikasi produk:
+  - Jenis garansi
+  - Gaming / non-gaming
+  - Tipe earphone
+  - Umur toko
+- Pencarian nama toko
 
+#### Informasi yang Ditampilkan
+- Jumlah produk
+- Harga
+- Sold
+- Stock
+- Jumlah toko
+- Rata-rata rating
+- Top store
+- Distribusi produk gaming vs non-gaming
+
+**Tujuan:**  
+Mempermudah pengguna menemukan produk dengan spesifikasi dan tingkat kredibilitas tertentu yang **tidak tersedia secara eksplisit pada antarmuka Shopee**.
 
 📁 File dashboard:  
 [`file power bi`](power-bi/shopee.pbix)
 
 Dashboard online dapat di akses pada [link ini](https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D)
+---
+
+## 📈 Market Insight Summary
+
+Berdasarkan hasil visualisasi dashboard:
+
+- Terdapat **792 produk earphone** di Shopee
+- Rentang harga berkisar dari **Rp1.950 hingga Rp5.000.000**
+- Produk berasal dari **413 toko**
+- Data diambil pada akhir November sehingga merepresentasikan kondisi market saat itu
+- Total stok mencapai lebih dari **66 juta unit**
+- Total penjualan mencapai sekitar **691 ribu unit**
+- **Top 5 brand** dengan penjualan tertinggi:
+  - Soundscore
+  - Robot
+  - Baseus
+  - TWS
+  - Goojodog
+- Mayoritas produk **tidak mencantumkan brand secara eksplisit**
+- Komposisi kategori produk:
+  - **60%** gaming
+  - **24%** non-gaming
+  - **16%** tidak diketahui
+- Toko tersebar di **13 provinsi di Indonesia**
 
 ---
 
@@ -219,13 +303,13 @@ Dari grafik tersebut, diperoleh insight sebagai berikut:
 
 ---
 ## ⭐ Conclusion
-<!-- > *Insight ini dapat disesuaikan setelah analisis selesai.* -->
+Pasar earphone di Shopee Indonesia merupakan market yang sangat kompetitif dengan ratusan produk dan toko yang bersaing pada rentang harga yang luas. Market didominasi oleh produk non-brand dan kategori earphone gaming, dengan distribusi toko yang tersebar di berbagai provinsi di Indonesia. Kondisi ini menunjukkan tingginya pilihan produk bagi pembeli sekaligus ketatnya persaingan antar toko.
 
-- earphone yang ada dishopee dijual pada rentang harga **Rp1.950 – Rp5.000.000**  
-- Toko *Preferred* memiliki median penjualan **lebih tinggi**  
-- Rating berpengaruh positif terhadap sold, namun hubungan tidak linear  
-- Banyak brand low-budget mendominasi jumlah produk namun tidak penjualan  
-- Harga memiliki **non-linear pattern**, sehingga korelasi lebih stabil pada log-scale  
+Melalui dashboard interaktif, proyek ini memberikan kemampuan filtrasi produk yang lebih detail dibandingkan antarmuka Shopee, memungkinkan pengguna mengeksplorasi produk berdasarkan harga, spesifikasi produk, dan karakteristik toko yang sebelumnya tidak tersedia secara eksplisit.
+
+Hasil analisis Permutation Feature Importance menunjukkan bahwa kredibilitas toko dan produk merupakan faktor utama yang memengaruhi penjualan. Interaksi pengguna seperti jumlah komentar, rating (terutama rating negatif), dan jumlah pengikut toko memiliki pengaruh yang jauh lebih besar dibandingkan atribut administratif seperti jenis garansi, tipe toko, atau stok. Temuan ini mengindikasikan bahwa pembeli cenderung mengandalkan pengalaman dan feedback pembeli lain dalam menilai kepercayaan toko sebelum melakukan keputusan pembelian.
+
+Secara keseluruhan, proyek ini menegaskan bahwa peningkatan penjualan earphone di Shopee tidak hanya bergantung pada harga atau spesifikasi produk, tetapi lebih pada pembangunan reputasi dan interaksi positif dengan pembeli, yang dapat dimanfaatkan sebagai dasar strategi toko maupun pengembangan sistem rekomendasi dan filtrasi produk yang lebih efektif.
 
 ---
 
