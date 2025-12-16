@@ -243,7 +243,7 @@ Halaman ini berfokus pada eksplorasi dan seleksi produk secara detail.
 **Tujuan:**  
 Mempermudah pengguna menemukan produk dengan spesifikasi dan tingkat kredibilitas tertentu yang **tidak tersedia secara eksplisit pada antarmuka Shopee**.
 
-📁 File dashboard: [`file power bi`](power-bi/shopee.pbix). Dashboard online dapat di akses pada [link ini](https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D)
+📁 ****File dashboard**: [`file power bi`](power-bi/shopee.pbix). Dashboard online dapat di akses pada [link ini](https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D)
 ---
 
 ## 📈 Market Insight Summary
