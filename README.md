@@ -1,6 +1,6 @@
 # 📊 Shopee Earphone Market Analysis
 
-End-to-end analytics project: web scraping (Node.js) → data preprocessing (Python) → exploratory data analysis & dashboard (Power BI) → feature importance analysis (Machine Learning).
+End-to-end analytics project: web scraping (Node.js) → data preprocessing (Python) → exploratory data analysis & dashboard (Power BI).
 
 ---
 
@@ -29,8 +29,7 @@ Proses analisis mencakup:
 1. Data collection melalui scraping Shopee API
 2. Data cleaning & transformation (Python)
 3. Data modeling & dashboard (Power BI)
-4. Statistical analysis (Spearman correlation)
-5. Machine learning (Random Forest + Permutation Feature Importance)
+4. Exploratory Data Analysis (EDA)
 
 ---
 
@@ -98,11 +97,11 @@ Data mencakup:
 
 ---
 
-### 💬 2. Komentar (Strongest Driver)
-- Korelasi sangat kuat antara **jumlah komentar dan penjualan**
+### 💬 2. Komentar (Strong Driver)
+- Hubungan positif kuat antara **jumlah komentar dan penjualan**
 - Lebih konsisten dibanding like
 
-👉 Semakin aktif interaksi:
+👉 Semakin tinggi interaksi:
 → semakin tinggi trust  
 → semakin tinggi konversi
 
@@ -116,29 +115,13 @@ Data mencakup:
 
 ### ⚠️ 4. Cancellation Rate
 - Harus **0%**
-- Sedikit kenaikan → penjualan langsung drop drastis
+- Sedikit kenaikan → penjualan langsung turun drastis
 
 ---
 
 ### 📍 5. Lokasi
-- Seller dari **Jabodetabek (DKI Jakarta & Banten)** unggul signifikan
-- Faktor logistik berpengaruh besar ke konversi
-
----
-
-## 🤖 Feature Importance (Machine Learning)
-
-Menggunakan Random Forest + Permutation Feature Importance:
-
-### Top Factors:
-1. `cmt_count` (jumlah komentar)
-2. `prod_rating`
-3. `follower_count`
-4. `shop_ctime` (usia toko)
-5. `price`
-
-### Insight:
-> **Social proof (review & rating) jauh lebih kuat dibanding harga**
+- Seller dari **Jabodetabek (DKI Jakarta & Banten)** memiliki performa penjualan lebih tinggi
+- Faktor logistik berpengaruh terhadap konversi
 
 ---
 
@@ -195,4 +178,4 @@ Untuk memaksimalkan penjualan di Shopee:
 
 ---
 
-Project ini dibuat sebagai portofolio untuk posisi **Data Analyst / Data Scientist**.
+Project ini dibuat sebagai portofolio untuk posisi **Data Analyst**.
