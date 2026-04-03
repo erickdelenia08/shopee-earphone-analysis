@@ -23,7 +23,7 @@ Proyek ini bertujuan untuk mengidentifikasi **strategi optimal bagi seller** dal
 
 ## 🧠 Methodology
 
-![Pipeline](images/scheme.png)
+<!-- ![Pipeline](images/scheme.png) -->
 
 Proses analisis:
 1. Data collection melalui scraping Shopee API
@@ -175,7 +175,7 @@ Dashboard terdiri dari 3 halaman utama:
 - Spesifikasi detail (gaming, garansi, dll)
 
 📁 File: `power-bi/shopee.pbix`  
-🌐 Dashboard: https://app.powerbi.com/
+🌐 Dashboard: https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D
 
 ---
 
