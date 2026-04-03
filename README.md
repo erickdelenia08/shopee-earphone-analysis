@@ -1,50 +1,49 @@
 # 📊 Shopee Earphone Market Analysis
 
-End-to-end analytics project: web scraping (Node.js) → data preprocessing (Python) → exploratory data analysis & dashboard (Power BI).
+End-to-end data analytics project: web scraping (Node.js) → data preprocessing (Python) → exploratory data analysis & dashboard (Power BI).
 
 ---
 
 ## 🚀 Project Overview
 
-Pasar earphone di Shopee Indonesia sangat kompetitif, dengan ratusan produk dan toko yang bersaing pada berbagai rentang harga, spesifikasi, dan reputasi.
+Pasar earphone di Shopee Indonesia sangat kompetitif dengan ratusan produk dan toko yang bersaing pada berbagai rentang harga, spesifikasi, serta reputasi.
 
 Proyek ini bertujuan untuk mengidentifikasi **strategi optimal bagi seller** dalam menentukan:
 - Produk yang dijual
 - Harga yang kompetitif
-- Faktor utama yang mendorong penjualan
+- Faktor utama yang memengaruhi penjualan
 
 ---
 
 ## 🎯 Main Business Question
 
-> **“Bagaimana seller dapat menentukan produk, harga, dan spesifikasi earphone yang optimal untuk memaksimalkan penjualan di Shopee?”**
+> **Bagaimana seller dapat menentukan produk, harga, dan spesifikasi earphone yang optimal untuk memaksimalkan penjualan di Shopee?**
 
 ---
 
 ## 🧠 Methodology
 
-![alt text](images/scheme.png)
+![Pipeline](images/scheme.png)
 
-Proses analisis mencakup:
+Proses analisis:
 1. Data collection melalui scraping Shopee API
 2. Data cleaning & transformation (Python)
-3. Data modeling & dashboard (Power BI)
-4. Exploratory Data Analysis (EDA)
+3. Exploratory Data Analysis (EDA)
+4. Data visualization & dashboard (Power BI)
 
 ---
 
 ## 📦 Dataset Summary
 
-Dataset terdiri dari:
 - **792 produk**
 - **413 toko**
-- Total penjualan: ~691 ribu unit
+- Total penjualan: ~691.000 unit
 - Total stok: ~66 juta unit
 
-Data mencakup:
-- Produk (harga, rating, sold, dll)
-- Toko (rating, lokasi, cancellation rate)
-- Interaksi user (komentar, like)
+Dataset mencakup:
+- Informasi produk (harga, rating, sold)
+- Informasi toko (rating, lokasi, cancellation rate)
+- Interaksi pengguna (komentar, like)
 
 ---
 
@@ -52,82 +51,114 @@ Data mencakup:
 
 ---
 
-## 🎧 A. Produk Apa yang Harus Dijual?
+## 🎧 A. Produk & Positioning
 
-- Produk **TWS (Wireless)** mendominasi pasar
-- Brand seperti **ROBOT, Baseus, dan TWS-type products** memiliki performa penjualan tinggi
-- **60,48% produk menggunakan label “Gaming”**
+### 🏆 Top Brand (Average Sales Performance)
 
-👉 Namun:
-- Performa **Gaming vs Non-Gaming relatif seimbang**
-- Label gaming lebih berfungsi sebagai **marketing positioning**, bukan penentu utama penjualan
+- **Music Angel (Wired)**  
+  Harga: Rp10.000 – Rp20.000  
+  Total sold: **>255.000 unit**
 
-### 💡 Insight:
-> Produk **TWS dengan fitur gaming (low latency)** memiliki demand tinggi, namun berada di **red ocean market (kompetisi tinggi)**
+- **Goojodoq (Wireless)**  
+  Harga: Rp60.000 – Rp140.000  
+  Total sold: **>132.000 unit**
+
+- **Viclook (Wireless)**  
+  Harga: Rp20.000 – Rp40.000  
+  Total sold: **>15.000 unit**
+
+- **Soundcare (Wireless)**  
+  Harga: Rp140.000 – Rp280.000  
+  Total sold: **>28.000 unit**
+
+### 💡 Insight dari Tipe Produk:
+- 3 dari 4 top brand merupakan **Wireless (TWS/Bluetooth)**
+- Wireless mendominasi berbagai segmen harga
+- Produk **wired tetap kuat di segmen ultra low price**
+
+### 🎯 Insight:
+> Pasar menunjukkan pergeseran ke arah **wireless**, namun **wired masih relevan untuk strategi volume di harga sangat rendah**
 
 ---
 
-## 💰 B. Harga Ideal Berapa?
+### 🎮 Gaming vs Non-Gaming
 
-### 🎯 Ditemukan 2 sweet spot:
+- **60% produk** menggunakan label Gaming
+- Performa penjualan:
+  - Gaming: ~34%
+  - Non-Gaming: ~35%
+  - Sisanya: tidak diketahui
 
-1. **Entry Level (< Rp50.000)**
+### 💡 Insight:
+> Label *Gaming* tidak secara signifikan meningkatkan penjualan, melainkan berfungsi sebagai strategi marketing (red ocean market)
+
+---
+
+## 💰 B. Strategi Harga
+
+### 🎯 Dua Strategi Utama:
+
+1. **Low Price Strategy (< Rp50.000)**
    - Volume tinggi
-   - Cocok untuk penetration strategy
+   - Margin tipis
 
-2. **Mid-Range (Rp250.000 – Rp300.000)**
-   - Memiliki **rata-rata penjualan tertinggi**
-   - Menunjukkan kepercayaan konsumen terhadap produk kualitas menengah
-
-### ❗ Insight penting:
-- Harga murah ≠ selalu paling laku
-- Distribusi produk memang menumpuk di harga rendah
-- Tapi performa terbaik justru di mid-range
+2. **Mid-Range Strategy (Rp250.000 – Rp280.000)**
+   - Rata-rata penjualan tertinggi
+   - Sweet spot market
 
 ### 💡 Insight:
-> Range **Rp250.000 – Rp300.000** adalah titik optimal untuk **balance antara volume dan profit**
+> Konsumen tidak selalu memilih yang termurah, tetapi mempertimbangkan **value dan kualitas produk**
 
 ---
 
-## ⭐ C. Faktor yang Mempengaruhi Penjualan
+## ⭐ C. Faktor Penentu Penjualan
 
-### 🔥 1. Rating (Critical Factor)
-- Penjualan mulai meningkat signifikan di **rating ≥ 4.5**
-- Produk dengan rating < 4.0 hampir tidak memiliki penjualan
+### 🔥 1. Rating (Critical Threshold)
+- Penjualan meningkat signifikan di **rating ≥ 4.5**
+- Di bawah 4.0 → hampir tidak ada penjualan
 
 ---
 
-### 💬 2. Komentar (Strong Driver)
-- Hubungan positif kuat antara **jumlah komentar dan penjualan**
+### 💬 2. Review / Komentar
+- Korelasi sangat kuat dengan penjualan
 - Lebih konsisten dibanding like
 
-👉 Semakin tinggi interaksi:
-→ semakin tinggi trust  
-→ semakin tinggi konversi
+👉 Semakin banyak review → semakin tinggi trust → semakin tinggi konversi
 
 ---
 
 ### 🎯 3. Diskon
-- Efektif di range **60% – 80%**
-- Diskon kecil (<20%) kurang impactful
+- Optimal di **60% – 70%**
+- Diskon kecil kurang efektif
 
 ---
 
-### ⚠️ 4. Cancellation Rate
-- Harus **0%**
-- Sedikit kenaikan → penjualan langsung turun drastis
+## 🏪 D. Faktor Toko & Operasional
+
+### 📍 Lokasi
+- Didominasi oleh seller dari:
+  - DKI Jakarta
+  - Banten
+  - Jawa Barat
+
+👉 Faktor logistik berpengaruh besar
 
 ---
 
-### 📍 5. Lokasi
-- Seller dari **Jabodetabek (DKI Jakarta & Banten)** memiliki performa penjualan lebih tinggi
-- Faktor logistik berpengaruh terhadap konversi
+### ⚠️ Cancellation Rate
+- Harus mendekati **0%**
+- Sedikit kenaikan → penjualan turun drastis
+
+---
+
+### 🛡️ Garansi
+- Mayoritas produk menggunakan **Garansi Distributor (~42%)**
 
 ---
 
 # 📊 Dashboard
 
-Dashboard terdiri dari 3 halaman:
+Dashboard terdiri dari 3 halaman utama:
 
 ### 1. Market Overview
 - Distribusi harga
@@ -137,44 +168,50 @@ Dashboard terdiri dari 3 halaman:
 ### 2. Shop Analysis
 - Performa toko
 - Lokasi
-- Rating & kredibilitas
+- Kredibilitas
 
 ### 3. Product Analysis
 - Filtering produk advanced
 - Spesifikasi detail (gaming, garansi, dll)
 
-📁 **File:** `power-bi/shopee.pbix`  
-🌐 **Online Dashboard:** [Link Dashboard](https://app.powerbi.com/...)
+📁 File: `power-bi/shopee.pbix`  
+🌐 Dashboard: https://app.powerbi.com/
 
 ---
 
 # 💡 Final Business Recommendation
 
-Untuk memaksimalkan penjualan di Shopee:
+Untuk memaksimalkan penjualan:
 
-- 🎧 Fokus pada **produk TWS (Wireless)**
-- 🎮 Tambahkan fitur **Gaming (Low Latency)**
-- 💰 Gunakan pricing di **Rp250.000 – Rp300.000**
-- 🎯 Berikan diskon **>50% (ideal 60–80%)**
-- ⭐ Jaga rating minimal **4.7+**
-- 💬 Tingkatkan **jumlah review & interaksi**
-- ⚠️ Pastikan **cancellation rate = 0%**
+- 🎧 Fokus pada produk **Wireless (TWS/Bluetooth)** untuk mengikuti tren pasar
+- 💡 Gunakan produk **Wired** untuk strategi low-cost (volume tinggi)
+- 💰 Gunakan pricing:
+  - <50k (volume)
+  - 250k–280k (optimal profit & demand)
+- ⭐ Jaga rating **≥ 4.7**
+- 💬 Tingkatkan jumlah review
+- 🎯 Gunakan diskon **60–70%**
+- ⚠️ Pastikan cancellation rate = 0%
 - 📍 Optimalkan lokasi logistik (Jabodetabek)
 
 ---
 
-# 🧠 Key Takeaway
+# 🧠 Conclusion
 
-> Penjualan di Shopee tidak ditentukan oleh harga semata,  
-> melainkan oleh **trust (rating & review), positioning produk, dan strategi pricing yang tepat.**
+Pasar earphone di Shopee tidak ditentukan oleh harga murah atau label produk semata, melainkan oleh kombinasi:
+
+- **Trust (rating & review)**
+- **Strategi harga**
+- **Positioning produk**
+- **Efisiensi operasional toko**
 
 ---
 
 ## 📬 Contact
 
 **Author:** Erick Delenia  
-- Instagram: https://instagram.com/ercdel  
-- Email: erickdelenia08@email.com  
+📧 Email: erickdelenia08@email.com  
+📷 Instagram: https://instagram.com/ercdel  
 
 ---
 
