@@ -1,4 +1,4 @@
-# 📊 Shopee Earphone Market Analysis
+#  Shopee Earphone Market Analysis
 
 End-to-end data analytics project: web scraping (Node.js) → data preprocessing (Python) → exploratory data analysis & dashboard (Power BI).
 
@@ -127,15 +127,15 @@ Dataset mencakup:
 
 ---
 
-### 🎯 3. Diskon
+###  3. Diskon
 - Optimal di **60% – 70%**
 - Diskon kecil kurang efektif
 
 ---
 
-## 🏪 D. Faktor Toko & Operasional
+##  D. Faktor Toko & Operasional
 
-### 📍 Lokasi
+###  Lokasi
 - Didominasi oleh seller dari:
   - DKI Jakarta
   - Banten
@@ -207,7 +207,7 @@ Pasar earphone di Shopee tidak ditentukan oleh harga murah atau label produk sem
 
 ---
 
-## 📬 Contact
+##  Contact
 
 **Author:** Erick Delenia  
 Email: erickdelenia08@email.com  
