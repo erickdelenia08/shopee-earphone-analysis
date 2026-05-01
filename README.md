@@ -4,7 +4,7 @@ End-to-end data analytics project: web scraping (Node.js) → data preprocessing
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 Pasar earphone di Shopee Indonesia sangat kompetitif dengan ratusan produk dan toko yang bersaing pada berbagai rentang harga, spesifikasi, serta reputasi.
 
@@ -15,13 +15,13 @@ Proyek ini bertujuan untuk mengidentifikasi **strategi optimal bagi seller** dal
 
 ---
 
-## 🎯 Main Business Question
+##  Main Business Question
 
 > **Bagaimana seller dapat menentukan produk, harga, dan spesifikasi earphone yang optimal untuk memaksimalkan penjualan di Shopee?**
 
 ---
 
-## 🧠 Methodology
+##  Methodology
 
 <!-- ![Pipeline](images/scheme.png) -->
 
@@ -33,7 +33,7 @@ Proses analisis:
 
 ---
 
-## 📦 Dataset Summary
+##  Dataset Summary
 
 - **792 produk**
 - **413 toko**
@@ -47,13 +47,13 @@ Dataset mencakup:
 
 ---
 
-# 🔍 Key Insights
+#  Key Insights
 
 ---
 
-## 🎧 A. Produk & Positioning
+##  A. Produk & Positioning
 
-### 🏆 Top Brand (Average Sales Performance)
+###  Top Brand (Average Sales Performance)
 
 - **Music Angel (Wired)**  
   Harga: Rp10.000 – Rp20.000  
@@ -71,17 +71,17 @@ Dataset mencakup:
   Harga: Rp140.000 – Rp280.000  
   Total sold: **>28.000 unit**
 
-### 💡 Insight dari Tipe Produk:
+###  Insight dari Tipe Produk:
 - 3 dari 4 top brand merupakan **Wireless (TWS/Bluetooth)**
 - Wireless mendominasi berbagai segmen harga
 - Produk **wired tetap kuat di segmen ultra low price**
 
-### 🎯 Insight:
+###  Insight:
 > Pasar menunjukkan pergeseran ke arah **wireless**, namun **wired masih relevan untuk strategi volume di harga sangat rendah**
 
 ---
 
-### 🎮 Gaming vs Non-Gaming
+###  Gaming vs Non-Gaming
 
 - **60% produk** menggunakan label Gaming
 - Performa penjualan:
@@ -89,14 +89,14 @@ Dataset mencakup:
   - Non-Gaming: ~35%
   - Sisanya: tidak diketahui
 
-### 💡 Insight:
+###  Insight:
 > Label *Gaming* tidak secara signifikan meningkatkan penjualan, melainkan berfungsi sebagai strategi marketing (red ocean market)
 
 ---
 
-## 💰 B. Strategi Harga
+##  B. Strategi Harga
 
-### 🎯 Dua Strategi Utama:
+###  Dua Strategi Utama:
 
 1. **Low Price Strategy (< Rp50.000)**
    - Volume tinggi
@@ -106,24 +106,24 @@ Dataset mencakup:
    - Rata-rata penjualan tertinggi
    - Sweet spot market
 
-### 💡 Insight:
+###  Insight:
 > Konsumen tidak selalu memilih yang termurah, tetapi mempertimbangkan **value dan kualitas produk**
 
 ---
 
-## ⭐ C. Faktor Penentu Penjualan
+##  C. Faktor Penentu Penjualan
 
-### 🔥 1. Rating (Critical Threshold)
+###  1. Rating (Critical Threshold)
 - Penjualan meningkat signifikan di **rating ≥ 4.5**
 - Di bawah 4.0 → hampir tidak ada penjualan
 
 ---
 
-### 💬 2. Review / Komentar
+###  2. Review / Komentar
 - Korelasi sangat kuat dengan penjualan
 - Lebih konsisten dibanding like
 
-👉 Semakin banyak review → semakin tinggi trust → semakin tinggi konversi
+ Semakin banyak review → semakin tinggi trust → semakin tinggi konversi
 
 ---
 
@@ -141,22 +141,22 @@ Dataset mencakup:
   - Banten
   - Jawa Barat
 
-👉 Faktor logistik berpengaruh besar
+Faktor logistik berpengaruh besar
 
 ---
 
-### ⚠️ Cancellation Rate
+###  Cancellation Rate
 - Harus mendekati **0%**
 - Sedikit kenaikan → penjualan turun drastis
 
 ---
 
-### 🛡️ Garansi
+###  Garansi
 - Mayoritas produk menggunakan **Garansi Distributor (~42%)**
 
 ---
 
-# 📊 Dashboard
+# Dashboard
 
 Dashboard terdiri dari 3 halaman utama:
 
@@ -174,29 +174,29 @@ Dashboard terdiri dari 3 halaman utama:
 - Filtering produk advanced
 - Spesifikasi detail (gaming, garansi, dll)
 
-📁 File: `power-bi/shopee.pbix`  
-🌐 Dashboard: [dashboard](https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D)
+ File: `power-bi/shopee.pbix`  
+ Dashboard: [dashboard](https://app.powerbi.com/view?r=eyJrIjoiNzczM2M3NjMtZDJlZi00Mzg4LTg2ZGMtNTcyZmMzZTFiMDUzIiwidCI6IjFkNTE2OWFjLWM3Y2ItNDI3NS05NzY0LWJmOGM5YzM2NGE0YyIsImMiOjEwfQ%3D%3D)
 
 ---
 
-# 💡 Final Business Recommendation
+#  Final Business Recommendation
 
 Untuk memaksimalkan penjualan:
 
-- 🎧 Fokus pada produk **Wireless (TWS/Bluetooth)** untuk mengikuti tren pasar
-- 💡 Gunakan produk **Wired** untuk strategi low-cost (volume tinggi)
-- 💰 Gunakan pricing:
+- Fokus pada produk **Wireless (TWS/Bluetooth)** untuk mengikuti tren pasar
+- Gunakan produk **Wired** untuk strategi low-cost (volume tinggi)
+- Gunakan pricing:
   - <50k (volume)
   - 250k–280k (optimal profit & demand)
-- ⭐ Jaga rating **≥ 4.7**
-- 💬 Tingkatkan jumlah review
-- 🎯 Gunakan diskon **60–70%**
-- ⚠️ Pastikan cancellation rate = 0%
-- 📍 Optimalkan lokasi logistik (Jabodetabek)
+- Jaga rating **≥ 4.7**
+- Tingkatkan jumlah review
+- Gunakan diskon **60–70%**
+- Pastikan cancellation rate = 0%
+- Optimalkan lokasi logistik (Jabodetabek)
 
 ---
 
-# 🧠 Conclusion
+# Conclusion
 
 Pasar earphone di Shopee tidak ditentukan oleh harga murah atau label produk semata, melainkan oleh kombinasi:
 
@@ -210,8 +210,8 @@ Pasar earphone di Shopee tidak ditentukan oleh harga murah atau label produk sem
 ## 📬 Contact
 
 **Author:** Erick Delenia  
-📧 Email: erickdelenia08@email.com  
-📷 Instagram: https://instagram.com/ercdel  
+Email: erickdelenia08@email.com  
+Instagram: https://instagram.com/ercdel  
 
 ---
 
